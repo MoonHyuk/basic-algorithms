@@ -17,6 +17,8 @@ myvector.resize(12); // 1 2 3 4 5 100 100 100 0 0 0 0
 
 ### insert
 Return value: An iterator that points to the first of the newly inserted elements.
+
+**들어간 값들 중 가장 앞 원소의 위치를 반환한다**
 ```cpp
 vector<int> myvector(3,100); // 100 100 100
 vector<int>::iterator it;
@@ -38,6 +40,8 @@ myvector.insert(myvector.begin(), myarray, myarray+3); // 501 502 503 300 300 40
 
 ### erase
 Return value: An iterator pointing to the new location of the element that followed the last element erased by the function call. This is the container end if the operation erased the last element in the sequence.
+
+**지워진 값들 중 가장 뒤 원소 다음 위치를 반환한다. 만약 마지막 원소가 지워졌다면 end가 된다.**
 
 ```cpp
 for (int i=1; i<=10; i++) myvector.push_back(i); // 1 2 3 4 5 6 7 8 9 10
